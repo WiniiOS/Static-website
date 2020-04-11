@@ -1,0 +1,283 @@
+/* mise en forme generale */
+nav a,footer h1,section h1
+{
+    text-transform: uppercase;
+}
+bloc-page
+{
+    width: 900px;
+    margin: auto;
+}
+
+/* design du header */
+#logo img
+{
+    border-radius: 30px;
+}
+#logo{margin-right: 30px;}
+
+
+#first{
+    display: flex;
+    margin: 5px;
+}
+header h2 
+{
+    margin-left: 5px;
+    color: rgb(88, 28, 185);
+}
+#first h3
+{
+    font-family: Verdana;
+    padding-left:20px;
+    margin-left: 15px;
+    font-weight: normal;
+}
+header
+{
+    display:flex;
+
+}
+nav{
+    margin-left: 30px;
+}
+
+nav ul
+{
+    margin-left:700px; 
+    list-style-type:none;
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+nav ul li
+{
+    
+    margin:10px;
+    
+}
+nav a {
+    text-decoration: none;
+    font-family: bold;
+}
+nav a:hover
+{
+    color:rgb(72,99,19);
+    transition: 0.3s;
+    transform:scale(1.1);
+}
+nav a:active
+{
+    color: rgb(189, 56, 144);
+    transition: 0.3s;
+    transform:scale(0.90);
+}
+nav a:selected
+{
+    color: rgb(97, 45, 146)
+}
+/* design de la banniere */
+#banniere-image
+{
+    background:url('img/cash-banner.jpg') repeat-x ;
+    height: 230px;
+    border-radius: 10px;
+    position: relative;
+}
+#description
+{
+    background: rgba(19, 18, 18,0.5);
+    color: white;
+    height:30px;
+    padding: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99.5%;
+    border-radius: 4px;
+}
+#description a
+{
+    display:block;
+    margin-left: 850px;
+    color: white;
+    background: rgb(156, 55, 55);
+    border-radius: 8px;
+    cursor: pointer;
+    width: 110px;
+    text-decoration: none;
+    padding: 10px;
+    border: outset;
+    text-align:center;
+}
+#description
+{
+    display:flex;
+}
+#description a:hover
+{
+    transition: 0.3s;
+    transform:scale(1.05);
+}
+#description a:active
+{
+    transition: 0.3s;
+    transform:scale(0.90);
+	box-shadow: 6px 5px 6px 4px rgba(1,1,1,0.4);
+}
+
+/* design de la section */
+section
+{
+    display: flex;
+    text-align: justify;
+    font-size:1.1em;
+    
+}
+#art1
+{
+    display: flex;
+    
+}
+#art1 h1
+{
+   margin-left:10px;
+}
+article
+{
+    margin:10px; 
+    flex:3;
+    padding: 5px;
+}
+aside{
+    flex:1.2;
+    margin:10px;
+    padding: 5px;
+    margin-top:8px;
+    background: rgb(170, 209, 172);
+    border-radius: 13px;
+    box-shadow: 4px 5px 0px rgb(153, 148, 148);
+}
+aside a
+{
+    margin-left:70px;
+}
+
+
+/* design du footer */
+footer
+{
+    display:flex;
+    justify-content: space-between;
+}
+footer img
+{
+    width: 50px;
+    height: 70px;
+    margin: 2px;
+}
+
+#tweets
+{
+    width: 30%;
+    padding: 10px;
+}
+#potos{
+    width:35%;
+    padding: 7px;
+}
+#potos h1
+{
+   margin-left: 40px;
+}
+#list
+{
+    display: flex;
+    width:30%;
+    padding: 10px;
+}
+#list ul
+{
+    list-style-type: none;
+    
+    list-style-image: url();
+}
+#block
+{
+    display: block;
+    text-align: center;   
+}
+#block p
+{
+    margin-right: 60px;
+}
+
+/* Regles du design responsive */
+
+@media all and (max-width:1024px)
+{
+    #bloc-page
+    {
+        width: auto;
+    }
+    nav
+    {
+        width: 50%;
+        height: auto;
+        margin-left: -400px;
+        width: 40%;
+        position: relative;
+    }
+    nav ul
+    {
+        list-style-type:none;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    
+    /* design de la banniere */
+    #banniere-image
+    {
+        background:url('img/cash-banner.jpg') repeat-x ;
+        height: 230px;
+        border-radius: 10px;
+        position: relative;
+        display: none;
+    }
+    #description
+    {
+        background: rgba(19, 18, 18,0.5);
+        color: white;
+        display: none;
+        height:30px;
+        padding: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 99.5%;
+        border-radius: 4px;
+    }
+    #description a
+    {
+        display:none;
+        margin-left: 850px;
+        color: white;
+        background: rgb(156, 55, 55);
+        border-radius: 8px;
+        cursor: pointer;
+        width: 110px;
+        text-decoration: none;
+        padding: 10px;
+        border: outset;
+        text-align:center;
+    }
+    section
+    {
+        display: block;
+        text-align: justify;
+        font-size:1.1em;
+        
+    }
+}
